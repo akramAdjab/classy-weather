@@ -152,7 +152,7 @@ function WeatherDays({ weather }) {
 }
 
 function Day({ max, min, date, code }) {
-  const currentDay = new Intl.DateTimeFormat(navigator.language, {
+  const currentDay = new Intl.DateTimeFormat("en-US", {
     weekday: "short",
   }).format(new Date());
 
